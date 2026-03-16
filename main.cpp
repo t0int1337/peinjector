@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 
     unsigned char* shellcode = nullptr;
 
-    std::ifstream _file("test.exe", std::ios::binary | std::ios::ate);
+    std::ifstream _file(shellcode_f, std::ios::binary | std::ios::ate);
     size_t size = _file.tellg();
     _file.seekg(0);
 
